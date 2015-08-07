@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Rendering and touch zoom-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Mobile Stylesheet -->
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+   <!-- Load jQuery -->
+   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <!-- Load jQuery Mobile -->
+   <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+   <!-- Add an external file that has your jQuery functions -->
+   <script>
+   myImages = new Array(
+				"https://41.media.tumblr.com/eb7be172b9deed9c670f14c341955e03/tumblr_nq1zigkpkf1uwzlwfo1_540.jpg",
+				"https://40.media.tumblr.com/e7275851be6e64ea1543f2fc5828ab7d/tumblr_ngzptxU12j1s46c7no1_540.jpg",
+				"https://40.media.tumblr.com/991bcb7d1f7996cf9495bc1c8be1cecb/tumblr_np8726pdt31uwzlwfo1_540.jpg",
+				"https://41.media.tumblr.com/cb76cfc0640dca5711f37f14a6d7f8b6/tumblr_nel00iFlpO1tqob5io1_540.jpg",
+				"https://36.media.tumblr.com/tumblr_lsyxqsVu6g1qc8cwuo1_540.jpg",
+				"https://41.media.tumblr.com/aeaa4ca9ea86ef4ac62d2adb4e4fd549/tumblr_nl0s9kGeKM1sowspzo2_540.jpg");
+	var imageIndex=0;
+
+		var changeImage = function(direction){
+			imageIndex = imageIndex + direction;
+
+			if (imageIndex > myImages.length - 1){
+				imageIndex = 0
+			}
+
+			if (imageIndex < 0) {
+				imageIndex = myImages.length-1
+			}
+
+			document.getElementById('imageDisplayed').src = myImages[imageIndex];
+		}
+   </script>
+   
+		
+   <style>
+   div {
+				background-colour:black;
+				colour: white;
+			}
+			div.box {
+				height: 200px;
+				width: 500px;
+			}
+			body {
+				background-color:black;
+		        color: white;
+			}
+			.pics {
+				align:center;
+			}
+			marquee{
+		color:red;
+		background-color: black;
+		}
+		<!--h1 { font-family: ‘Lobster’, cursive; 
+		font-weight: 400; }
+		p {font-family: 'Pacifico',cursive;
+		font-weight: 400;}
+		marquee {font-family: 'Pacifico',cursive;
+		font-weight: 200;}-->
+		h1{
+		background-color: blue;
+		color: white;}
+		
+		table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+		
+   </style>
+</head>
+<body>
+		
+		
+	
+<!-- Start of first page -->
+<div data-role="page" id="pageone">
+
+	<div data-role="header">
+		<h1>HISTORY</h1>
+		<input type="submit" value="Add New Surgery">
+		<br><br>
+		<input type="submit" value="Add New FMH">
+		
+	</div><!-- /header -->
+	<!--header pic-->
+		<div class="pics" align="center">
+		<img src = https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFwkNBNDLASyXdbzSan4yBTThJUeDzOusDExPNtnzqY9sQJLA12w>
+	
+
+
+<!--TABLE-->
+<table style="width:100%">
+  <caption>History of Surgeries</caption>
+  <br><br>
+  <tr>
+    <th>Date</th>
+    <th>Procedure</th>
+	<th>Physician</th>
+	<th>Hospital</th>
+	<th>Notes</th>
+  </tr>
+  <tr>
+    <td><input type="text" name="info" value= ""></td>
+    <td><input type="text" name="info" value= ""></td>
+	<td><input type="text" name="info" value= ""></td>
+	<td><input type="text" name="info" value= ""></td>
+	<td><input type="text" name="info" value= ""></td>
+  </tr>
+  <tr>
+  
+    <td></td>
+    <td></td>
+	<td></td>
+    <td></td>
+	<td></td>
+  </tr>
+</table>
+<input type="submit" value="Save">
+
+<!--table2-->
+<table style="width:100%">
+  <caption>Family Medical History</caption>
+  <br><br>
+  <tr>
+    <th>Relation</th>
+    <th>Side(Mother/Father)</th>
+	<th>Age Diagnosed</th>
+	<th>Genetic?(Y/N)</th>
+	<th>Notes</th>
+  </tr>
+  <tr>
+    <td><input type="text" name="info" value= ""></td>
+    <td><input type="text" name="info" value= ""></td>
+	<td><input type="text" name="info" value= ""></td>
+	<td><input type="text" name="info" value= ""></td>
+	<td><input type="text" name="info" value= ""></td>
+  </tr>
+  <tr>
+  
+    <td></td>
+    <td></td>
+	<td></td>
+    <td></td>
+	<td></td>
+  </tr>
+</table>
+<input type="submit" value="Save">
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--slideshow-->
+		<!--<p align="right">
+		<img id="imageDisplayed" src="https://41.media.tumblr.com/439b0cffcfb6ff5ba17faf11802c6417/tumblr_nl2itzh8Wp1so1g8io1_540.jpg"/>
+	</p>
+
+
+	<center>
+		<table border=0>
+			<tr>
+				<td align=center>
+					<input type="button" value="Previous Image" onclick="changeImage(-1);">
+					<input type="button" value="Next Image" onclick="changeImage(1);">
+				</td>
+			</tr>
+		</table>
+	</center>
+	<!--end of slideshow-->
+	
+		<!--scrolling text-->	
+		<!--<marquee>GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.</marquee>
+		
+	<!--second text-->
+		<!--<h2 align ="center"> GIRLS WHO CODE</h2>
+		<p align="center">	Girls Who Code: A national non-profit organization working to close</p> 
+		<p align="center">the gender gap in the technology and engineering sectors. 
+		With support from public and private partners,</p>		
+		<p align="center">GWC works to educate, inspire and equip high school girls with the skills and resources
+to      pursue opportunities in computing fields</p>
+
+<!--picture of desk-->
+	<!--	<div class="pics" align="center">
+		<img src = https://pbs.twimg.com/media/CJ9RuerUwAAigJa.jpg:thumb>
+		<img src = https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkCKd3dFl8aiP77WQWeVQWEhb6Q47AAoCJxdb2a9YwRGbNDmmp>
+		<!--<div class="picsGWC" align="center-right">-->
+	<!--	<img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThVhUH7l0rb5mHRKTeaEUWKRvzn138dMXpV1Spdub2Y60IbxSiRQ>
+		<img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcTcvVZV10XeUM3Rs6s_wAs9AuMUN-XCIhviuQsK6BcOJldYO>
+	<!--scrolling text-->	
+
+
+<!--scrolling text-->	
+		<!--<marquee>GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.GWC.Girls Who Code.</marquee>
+	<div data-role="main" class="ui-content">
+    	<a href="#pagetwo">NEXT PAGE</a>
+  	</div><!-- /main -->
+	
+
+	<!--<div data-role="footer">
+		<h1>GIRLS WHO CODE</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<!--<div data-role="page" id="pagetwo">
+
+	<div data-role="header">
+		<h1>GIRLS WHO CODE</h1>
+	</div><!-- /header -->
+
+	<!-- <div data-role="main" class="ui-content">
+    	<a href="#pageone">Go to Page One</a>
+  	</div><!-- /main -->
+
+  	<!--<div data-role="main" class="ui-content">
+    	<p>KORKOICHARNELLE</p>
+  	</div>
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>
