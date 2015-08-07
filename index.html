@@ -1,383 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8">
-	<link href='http://fonts.googleapis.com/css?family=Arvo|Rokkitt' rel='stylesheet' type='text/css'>
-		<title>Pocket Doc</title>
-		<!--picture on tab--> <link rel="icon" type="image/png" href="PocketDoc.PNG">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pocket Doc</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!--<link href="css/heroic-features.css" rel="stylesheet">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<style>
-
-h1{
-	font-family:'Arvo', serif;
-	text-align:center;
-	}
-h2{
-	font-family:'Arvo', serif;
-	text-align: left;
-}
-div {
-	background-colour:black;
-	colour: white;
-	}
-div.box {
-	height: 3%;
-	width: 100%;
-	}
-body {
-	background-color:black;
-	color: white;
-	}
-.pics {
-	align:center;
-	}
-marquee{
-	color:red;
-	background-color: black;
-	}
-
-</style>
 
 <body>
-	
 
-<!-- Start of first page -->
-<!-- header -->
-<div data-role="page" id="Pocket Doc">
-<div data-role="header" data-theme="b">
-<link rel="icon" type="image/png" href="PocketDoc.PNG">
-	<h1> 
-		Pocket Doc
-	</h1> 
-</div> 
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-<div data-role="content"> <!--content-->
-	<a href="#Pocket Doc">
-  		<img src="PocketDoc.PNG" style="width:30%;height:30%;border:0">
-	</a>
-	<a href="#vaccines">
-  		<img src="syringe.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#allergies">
-  		<img src="pollen.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#personal history">
-  		<img src="avatar.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#calendar">
-  		<img src="calendar3.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#medicines">
-  		<img src="medicine.png" style="width:30%;height:30%;border:0">
-	</a>
-</div>
+    <!-- Page Content -->
+    <div class="container">
 
-<div data-role="footer" data-theme="b"> <!--foother-->
-	<h1>Girls Who Code 2015 </h1>
-</div>
-</div>
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1>A Warm Welcome!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+            <p><a class="btn btn-primary btn-large">Call to action!</a>
+            </p>
+        </header>
 
-<!--Start of second page-->
-<link rel="icon" type="image/png" href="PocketDoc.PNG">
-<div data-role="page" id="vaccines">
-<div data-role="header" data-theme="b">
-		<h1>Vaccines and Shots</h1>
-	</div>
-	<div data-role="content"> <!--content-->
-	<a href="#Pocket Doc">
-  		<img src="PocketDoc.PNG" style="width:30%;height:30%;border:0">
-	</a>
-	<a href="#vaccines">
-  		<img src="syringe.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#allergies">
-  		<img src="pollen.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#personal history">
-  		<img src="avatar.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#calendar">
-  		<img src="calendar3.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#medicines">
-  		<img src="medicine.png" style="width:30%;height:30%;border:0">
-	</a>
-</div>
-	<div data-role="footer" data-theme="b">
-	<h1>Girls Who Code 2015 </h1>
-</div>
-</div>
+        <hr>
 
-<!--Start of third page-->
-<link rel="icon" type="image/png" href="PocketDoc.PNG">
-<div data-role="page" id="allergies">
-	<div data-role="header" data-theme="b">
-		<h1>Allergies</h1>
-	</div>
-<div data-role="content"> <!--content-->
-	<a href="#Pocket Doc">
-  		<img src="PocketDoc.PNG" style="width:30%;height:30%;border:0">
-	</a>
-	<a href="#vaccines">
-  		<img src="syringe.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#allergies">
-  		<img src="pollen.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#personal history">
-  		<img src="avatar.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#calendar">
-  		<img src="calendar3.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#medicines">
-  		<img src="medicine.png" style="width:30%;height:30%;border:0">
-	</a>
-</div>
-	<div data-role="footer" data-theme="b">
-	<h1>Girls Who Code 2015 </h1>
-</div>
-</div>
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Latest Features</h3>
+            </div>
+        </div>
+        <!-- /.row -->
 
-<!--Start of fourth page-->
-<link rel="icon" type="image/png" href="PocketDoc.PNG">
-<div data-role="page" id="personal history">
-	<div data-role="header" data-theme="b">
-		<h1>Personal History</h1>
-		<input type="submit" value="Edit">
-	</div>
-<div data-role="content"> <!--content-->
-	<a href="#Pocket Doc">
-  		<img src="PocketDoc.PNG" style="width:30%;height:30%;border:0">
-	</a>
-	<a href="#vaccines">
-  		<img src="syringe.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#allergies">
-  		<img src="pollen.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#personal history">
-  		<img src="avatar.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#calendar">
-  		<img src="calendar3.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#medicines">
-  		<img src="medicine.png" style="width:30%;height:30%;border:0">
-	</a>
-</div>
-<body>
+        <!-- Page Features -->
+        <div class="row text-center">
 
-	<div class="pics" align="center">
-	<img src = "avatar.png" style = "width:30%;height:30%;border:0">
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-<!--name-->
-<form action="action_page.php" method="GET">
-<h2>
-First Name:<br>
-<input type="text" name="firstname" value="">
-<br>
-Last Name:<br>
-<input type="text" name="lastname" value="">
-<br>
-Middle Name Initial:<br>
-<input type="text" name="middlename" value="">
-<br>
-<!--DOB-->
-Date Of Birth:<br>
-<input type="text" name="dob" value="">
-<br>
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-<!--SEX-->
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-Gender At Birth:<br>
-<input type="text" name="sexatbirth" value="">
-<br>
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-Gender Identified With:
-<input type="text" name="sex" value="">
-<br>
+        </div>
+        <!-- /.row -->
 
-<!--RACE/ETH-->
+        <hr>
 
-Race:<br>
-<input type="text" name="race" value="">
-<br>
-Ethnicity:<br>
-<input type="text" name="ethnicity" value="">
-<br>
-Blood Type:<br>
-<input type="text" name="bloodtype" value="">
-<br>
-Marital Status:<br>
-<input type="text" name="maritalstatus" value="">
-<br>
-Primary Language:<br>
-<input type="text" name="primarylanguage" value="">
-<br>
-<img src="lock.png" style = "width:1%;height:1%;border:0">
-Address:<br>
-<input type="text" name="address" value="">
-<br>
-<img src="lock.png" style = "width:1%;height:1%;border:0">
-Home Phone Number (if applicable):<br>
-<input type="text" name="dob" value="">
-<img src="lock.png" style = "width:1%;height:1%;border:0">
-Mobile Number:<br>
-<input type="text" name="race" value="">
-<br>
-<img src="lock.png" style = "width:1%;height:1%;border:0">
-Driver's License Number: <br>
-<input type= "text" name="dln" value="">
-<br>
-<img src="lock.png" style = "width:1%;height:1%;border:0">
-State On Driver's License: <br>
-<input type="text" name="state" value="">
-<br>
-<img src="lock.png" style = "width:1%;height:1%;border:0">
-Expiration Date: <br>
-<input type= "text" name="exp" value="">
-<br>
-<img src="lock.png" style = "width:1%;height:1%;border:0">
-Social Security Number:<br>
-<input type="text" name="ss" value="">
-<br>
-Email: <br>
-<input type= "text" name="email" value="">
-<br>
-Spouse (first, last, middle initial):<br>
-<input type="text" name="spouse" value="">
-<br>
-Pharmacy Of Choice(name, city):<br>
-<input type= "text" name="poc" value="">
-<br>
-Pharmacy Telephone: <br>
-<input type="text" name="phartele" value="">
-<br>
-Emergency Contact:<br>
-<input type= "text" name="ec" value="">
-<br>
-Emergency Contact Telephone Number: <br>
-<input type="text" name="ectele" value="">
-<br>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
 
-</p>
-<input type="submit" value="Save">
+    </div>
+    <!-- /.container -->
 
-</form> 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<p>If you click "Submit", the form-data will be sent to a page called "action_page.php".</p>
-</h2>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
-	</a>
-	</div>
-	<div data-role="footer" data-theme="b">
-	<h1>Girls Who Code 2015 </h1>
-</div>
-</div>
-
-<!--Start of fifth page-->
-<link rel="icon" type="image/png" href="PocketDoc.PNG">
-<div data-role="page" id="calendar">
-	<div data-role="header" data-theme="b">
-		<h1>Calendar and Doctor Appointments</h1>
-	</div>
-<div data-role="content"> <!--content-->
-	<a href="#Pocket Doc">
-  		<img src="PocketDoc.PNG" style="width:30%;height:30%;border:0">
-	</a>
-	<a href="#vaccines">
-  		<img src="syringe.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#allergies">
-  		<img src="pollen.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#personal history">
-  		<img src="avatar.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#calendar">
-  		<img src="calendar3.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#medicines">
-  		<img src="medicine.png" style="width:30%;height:30%;border:0">
-	</a>
-</div>
-
-</form> 
-
-	<div data-role="footer" data-theme="b">
-	<h1>Girls Who Code 2015 </h1>
-</div>
-</div>
-<!--Start of sixth page-->
-<link rel="icon" type="image/png" href="PocketDoc.PNG">
-<div data-role="page" id="medicines">
-	<div data-role="header" data-theme="b">
-		<h1>Medicines and Medications</h1>
-	</div>
-<div data-role="content"> <!--content-->
-	<a href="#Pocket Doc">
-  		<img src="PocketDoc.PNG" style="width:30%;height:30%;border:0">
-	</a>
-	<a href="#vaccines">
-  		<img src="syringe.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#allergies">
-  		<img src="pollen.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#personal history">
-  		<img src="avatar.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#calendar">
-  		<img src="calendar3.png" style="width:30%;height:30%;border:0">
-	</a>
-		<a href="#medicines">
-  		<img src="medicine.png" style="width:30%;height:30%;border:0">
-	</a>
-</div>
-
-<form action="action_page.php" method="GET">
-<h2>
-Medicine Name:<br>
-<input type="text" name="medicinename" value="">
-<br>
-Dosage:<br>
-<input type="text" name="dosage" value="">
-<br>
-Frequency Of Use:<br>
-<input type="text" name="frequencyofuse" value="">
-<br>
-<!--DOB-->
-Date Prescribed:<br>
-<input type="text" name="dateprescribed" value="">
-<br>
-
-Date Of Expiration:<br>
-<input type="text" name="dateofexpiration" value="">
-<br>
-Physician:<br>
-<input type="text" name="physician" value="">
-<br>
-Purpose Of Use:<br>
-<input type="text" name="purposeofuse" value="">
-<br>
-Comments:<br>
-<input type="text" name="comments" value="">
-<br><br>
-
-</p>
-<input type="submit" value="Save">
-</h2>
-	<div data-role="footer" data-theme="b">
-	<h1>Girls Who Code 2015 </h1>
-</div>
-</div>
-
-</body>
-</html>	
